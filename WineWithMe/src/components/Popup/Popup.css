@@ -1,0 +1,287 @@
+@import url(https://fonts.googleapis.com/css?family=Merriweather);
+
+
+.body.active-modal {
+    overflow-y: hidden;
+}
+
+.btn-modal {
+    background-size: cover;
+    background-color: transparent;
+    border: none; 
+    cursor: pointer;
+}
+
+.popup-button-img {
+    width: 50px; 
+    height: 50px; 
+    margin-right: 5px; 
+    margin-left: 5px;
+  
+}
+.modal,
+.overlay {
+     width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: absolute; 
+
+}
+
+.modal{
+    z-index: 9999;      /*flyttat fram pop-up-fönstret ovanpå receptkorten.*/
+
+}
+
+.overlay {
+    position: fixed; 
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+
+}
+.modal-content{
+    position: absolute;
+    top:50%;           
+    left: 50%;
+    transform: translate(-50%, -50%);
+    line-height: 1.4; 
+    background-color: #faf7f7;
+    border: 1px solid #d3d2d2;
+    border-radius: 50px; 
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+    overflow: visible;
+    overflow-y: auto;     /*lade till en scroll för alla popuper*/
+    max-width: 600px;
+    min-width: 300px;
+    max-height: 725px;
+    box-shadow: 0px 20px 15px rgba(0, 0, 0, 0.3);
+    padding-right: 12px;
+    padding-left: 12px;
+ 
+}
+ .modal-content .content-container {
+    /* height: 100%; */
+    padding-right: 15px;
+    overflow-y: scroll;
+ } 
+
+.modal-content-inner{
+    background-color: #dbdbdb !important;
+    border: 1px solid #b1b1b1 !important;
+    border-radius: 50px !important;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1) !important;
+    margin: 60px 0px 10px !important;
+    transform: translateY(-40px) !important;
+    padding: 20px 10px 30px 10px;
+} 
+.modal-content-inner .headernav{
+    position: relative;
+}
+
+.modal-content-inspiration{
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    line-height: 1.4; 
+    background-color: #faf7f7;
+    border: 1px solid #d3d2d2;
+    border-radius: 50px; 
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+    overflow: auto;
+    max-width: 800px;
+    min-width: 300px;
+    max-height: 725px;
+    box-shadow: 0px 20px 15px rgba(0, 0, 0, 0.3); 
+    padding-left: 18px;
+}
+.modal-content-inspiration .content-container-inspiration {
+    height: 100%;
+    padding-right: 15px;
+}
+.modal-content-inner-inspiration .headernav{
+    position: relative;
+}
+::-webkit-scrollbar {
+    width: 2px;  
+    height: 2px;
+  }
+
+.headernav{
+    text-align: center;
+    margin-bottom: 10px;
+    align-self: center;
+}
+.header-btn{
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}
+.modal-content-inner-inspiration{
+    background-color: #dbdbdb !important;
+    border: 1px solid #b1b1b1 !important;
+    border-radius: 50px !important;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1) !important;
+    margin: 60px 0px 10px !important;
+    transform: translateY(-40px) !important;
+    padding: 20px 10px 30px 10px;
+}
+
+.close-modal {
+    display: flex;
+    justify-content: end;
+    background-color: transparent;
+    width: 45px;
+    padding: 5px 5px;
+    cursor: pointer;
+}
+
+.logo {
+    width: 30%;
+    height: 25%;
+    margin-top: 10px;
+    display: flex;
+    margin: auto;
+    margin-top: 1em;
+}
+
+
+/* Contact------------------------------------- */
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+/* html,
+body {
+    background: #f1f1f1;
+    font-family: 'Merriweather', sans-serif; */
+    /* padding: 1em; gjorde så att hela body fick 1em*/
+/* } */
+
+h1 {
+    text-align: center;
+    color: #a8a8a8;
+    text-shadow: 1px 1px 0 rgba(255, 255, 255, 1);
+}
+
+form.cf {
+    max-width: 600px;
+    text-align: center;
+    margin: 20px auto;
+}
+
+form.cf input[type="text"],
+form.cf input[type="email"],
+form.cf textarea {
+    border: 0;
+    outline: 0;
+    padding: 1em;
+    border-radius: 8px;
+    display: block;
+    width: 100%;
+    margin-top: 1em;
+    font-family: 'Merriweather', sans-serif;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+    background-color: #adadad;
+    resize: none;
+}
+
+form.cf input[type="text"]:focus,
+form.cf input[type="email"]:focus,
+form.cf textarea:focus {
+    box-shadow: 0 0px 2px rgb(168, 168, 168) !important;
+}
+
+form.cf #input-submit {
+    color: rgb(255, 255, 255);
+    background: #5c5c5c;
+    cursor: pointer;
+    border: none;
+    padding: 1em;
+    border-radius: 8px;
+    display: block;
+    width: 100%;
+    margin-top: 1em;
+    font-family: 'Merriweather', sans-serif;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+}
+
+/* border: 0 and outline: 0 to remove the default border and outline of the button.
+padding: 1em to give the button the same padding as the form inputs.
+border-radius: 8px to give the button the same rounded corners as the form inputs.
+display: block to make the button a block-level element so that it takes up the full width of its container.
+width: 100% to make the button the same width as the form inputs.
+margin-top: 1em to give the button the same margin as the form inputs.
+box-shadow: 0 1px 1px rgba(black, 0.1) to give the button the same box-shadow as the form inputs. */
+
+form.cf #input-submit:hover {
+    box-shadow: 0 1px 1px 1px rgba(170, 170, 170, 0.6);
+}
+
+form.cf textarea {
+    height: 126px;
+}
+
+.half {
+    float: left;
+    width: 48%;
+    margin-bottom: 1em;
+}
+
+.right {
+    width: 50%;
+}
+
+.left {
+    margin-right: 2%;
+}
+
+@media (max-width: 480px) {
+    .half {
+        width: 100%;
+        float: none;
+        margin-bottom: 0;
+    }
+    .modal-content-inspiration{
+        width: 100%;
+        min-width: 80%;
+        max-height: 90%;
+    }
+    .modal-content{
+        width: 100%;
+        min-width: 80%;
+        max-height: 90%;
+    }
+
+    .popup-button-img {
+        width: 2.8em; 
+        height: 2.8em; 
+        max-width: 100%;
+        max-height: 100%;
+
+        margin-right: 1px;
+        margin-left: 6px;
+    }
+
+    .insp{
+        background-color: #dbdbdb;
+    }
+}
+
+/* Clearfix */
+.cf::before,
+.cf::after {
+    content: '';
+    display: table;
+}
+
+.cf::after {
+    clear: both;
+}

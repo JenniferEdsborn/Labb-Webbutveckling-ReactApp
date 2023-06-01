@@ -1,0 +1,68 @@
+.winePairer {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 600px;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.8);
+  /* box-shadow: 0px 0px 20px 20px rgba(0, 0, 0, 0.4);
+  border-radius: 40px; */
+  margin-top: 24px;
+  padding: 10px;
+}
+
+.winePairingForm {
+  display: flex;
+  margin-top: 1em;
+  height: auto;
+  border: 2px solid black;
+  border-radius: 20px;
+  align-items: center;
+  width: 100%;
+}
+
+.winePairingInput {
+  display: flex;
+  font-size: 20px;
+  color: #000;
+  font-weight: 500;
+  background-color: transparent;
+  border: 0px;
+  padding: 0.5em;
+  width: 100%;
+}
+
+input.winePairingInput:focus {
+  outline-width: 0px;
+}
+
+.winePairerList{
+  display: flex;
+  flex-direction: column;
+}
+
+.wineListItem {
+  text-transform: capitalize;
+  list-style-type: none;
+}
+
+.btn_wineSelect{
+  padding: 9px;
+  margin: 2px;
+  border-radius: 20px;
+  background-color: whitesmoke;
+  color: #000;
+  border: 2px solid black;
+}
+
+.wineHeader{
+  color: black;
+  text-transform: capitalize;
+}
+
+@media screen and (min-width: 481px) {
+  .winePairer{
+      border-radius: 40px;
+      box-shadow: 0px 0px 20px 20px rgba(0, 0, 0, 0.4);
+  }
+}

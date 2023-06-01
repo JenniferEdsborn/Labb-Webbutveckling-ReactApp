@@ -1,0 +1,11 @@
+.recipe-specifics-img {
+    max-width: 3em;
+    padding-right: 0.5em;
+  }
+
+  @media screen and (max-width: 600px) {
+    .recipe-specifics-img {
+        max-width: 3em;
+      }
+
+  }

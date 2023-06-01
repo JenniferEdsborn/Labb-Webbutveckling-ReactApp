@@ -1,0 +1,49 @@
+.error_img {
+  width: 20%;
+}
+.logga{
+  width: 10em;
+  height: auto;
+  position: relative;
+  margin-bottom: 5rem;
+}
+
+.error-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  /* background-image: url('../../images/WW_bakgrund.jpg');
+  background-size: cover;
+  background-position: center;
+  border-radius: 20px; */
+}
+
+.error-message {
+  font-size: 28px;
+  color: #333;
+  margin-top: 10px;
+}
+
+.error-link {
+  color: #333;
+  text-decoration: none;
+  /* margin-top: 20px; */
+
+}
+
+.homepage-btn {
+  color: #000;
+  border: 2px solid black;
+  border-radius: 20px;
+  background-color: whitesmoke;
+  padding: 9px;
+  margin: 10px;
+  width: 20%;
+}
+
+@media (max-width: 480px) {
+  .homepage-btn {
+    width: 25%;
+  }
+}

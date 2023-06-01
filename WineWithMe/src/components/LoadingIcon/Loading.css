@@ -1,0 +1,13 @@
+.loader {
+    margin: auto;
+    border: 0.5em solid #343434;
+    border-radius: 50%;
+    width: 6em;
+    height: 6em;
+    animation: spinner 3s linear infinite;
+  }
+
+  @keyframes spinner {
+    0%{transform: rotate(0deg);}
+    100%{transform: rotate(360deg);}
+  }

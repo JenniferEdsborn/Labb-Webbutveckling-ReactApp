@@ -1,0 +1,89 @@
+.searchbar-container {
+  display: flex;
+}
+
+.search-container {
+  display: flex;
+  margin-top: 32px;
+  height: 2.5em;
+  border: 2px solid black;
+  background-color: #ffffff80;
+  border-radius: 20px;
+  align-items: center;
+  width: 100%;
+
+}
+
+.inputbar {
+  display: flex;
+  font-size: 18px;
+  color: #000;
+  font-weight: 500;
+  background-color: transparent;
+  border: 0px;
+  margin-left: 8px;
+  /* margin-right: -20px; */
+  width: 250px;
+}
+
+input.inputbar:focus {
+  outline-width: 0px;
+}
+
+.searchbutton {
+  color: #000;
+  width: 20%;
+  border: none;
+  background-color: transparent;
+  box-shadow: none;
+}
+
+.clearbutton {
+  margin-left: 5px;
+  padding: 0 5px;
+  display: flex;
+  align-items: center;
+  border: 2px solid black;
+  cursor: pointer;
+  margin-top: 32px;    /*ändrade lite i margin för att få ner knappen*/
+  border-radius: 20px;
+  background-color: whitesmoke;
+}
+
+.clear-img {
+  width: 30px;
+  height: 30px;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  transition: background-color 9999s ease-in-out 0s;
+}
+
+@media screen and (max-width: 480px) {
+  .searchbutton {
+    width: none;
+    margin-right: 0.6em;
+  }
+  .searchbar-container{
+    justify-content: flex-end;
+  }
+  .search-container{
+    width: 14.5em;
+    max-width: 60vw;
+    margin-top: -56px;
+    margin-right: 0.3em;
+    height: 2.5em;
+    border: 2px solid #343434;
+  }
+  .inputbar{
+    width: 10em;
+    font-size: 1.2rem;
+    overflow: hidden;
+  }
+  .clearbutton{
+    display:none;
+  }
+}

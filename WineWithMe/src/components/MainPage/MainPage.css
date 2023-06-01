@@ -1,0 +1,178 @@
+.mainLogo {
+  content: url(../../images/logo_with_text.png);
+  margin-top: 60px;
+  max-width: 600px;
+  width: 100%;
+  height: auto;
+}
+
+.searchWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+}
+
+.searchbar {
+  display: flex;
+  margin-top: 32px;
+  height: 60px;
+  border: 2px solid black;
+  border-radius: 20px;
+  align-items: center;
+}
+
+.input_search {
+  display: flex;
+  flex-grow: 1;
+  font-size: 20px;
+  color: #000;
+  font-weight: 500;
+  height: 40px;
+  background-color: transparent;
+  border: 0px;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+input.input_search:focus {
+  outline-width: 0px;
+}
+
+.container-recipe {
+  margin-top: 3rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  z-index: 0;
+  max-width: 90%;
+}
+
+.loggan {
+  max-width: 500px;
+  width: 100%;
+  height: auto;
+  margin-top: 8rem;
+}
+
+.btn_search {
+  color: #000;
+  height: 50px;
+  border: 2px solid black;
+  border-radius: 20px;
+  background-color: transparent;
+  margin-right: 5px;
+  padding: 5px;
+}
+
+.btn_filter {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  color: #000;
+  line-height: 90%;
+  margin: 5px;
+  border: 2px solid black;
+  border-radius: 20px;
+  background-color: #ffffffc8;
+  padding: 0.2rem 0.5rem 0.2rem 0.5rem;
+}
+
+button:hover {
+  border-color: white;
+  cursor: pointer;
+}
+
+button:focus {
+  outline: none;
+}
+
+.filterButtons {
+  display: flex;
+  margin-top: 32px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.filterArrow {
+  height: 25px;
+  rotate: 270deg;
+  margin-left: 0.22rem;
+}
+
+.filterArrow_Active {
+  height: 25px;
+  rotate: 90deg;
+  margin-left: 0.22rem;
+}
+
+p{
+  font-size: 1rem;
+}
+.loadMoreButton{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  color: #000;
+  line-height: 100%;
+  margin: 5px;
+  margin-bottom: 12px;
+  border: 2px solid black;
+  border-radius: 20px;
+  background-color: #ffffffc8;
+  padding: 0.2rem 0.5rem 0.2rem 0.5rem;
+}
+
+.loadMoreButton.disabled {
+  opacity: 0.5;
+  pointer-events: none;
+  cursor: not-allowed;
+}
+
+.loadMoreButton.disabled:hover {
+  border-color: none;
+  cursor: not-allowed;
+}
+
+.noRecipesText{
+  text-align: center;
+}
+
+::placeholder {
+  color: black;
+}
+/* Tagit bort btnfilter och typefilter för mobilversion så att dem inte syns när man öppnar nav */
+ @media screen and (max-width: 480px) {
+.btn_filter,
+.typeFilter {
+  padding: 0.1rem 0.2rem 0.1rem 0.4rem;
+  border: 1px solid black;
+  display:none;
+}
+.filterArrow_Active, .filterArrow{
+  height: 17px;
+}
+
+  .filterArrow_Active,
+  .filterArrow {
+    height: 17px;
+  }
+
+  .container-recipe {
+    margin-top: 0rem;
+  }
+
+  .searchWrapper{
+    padding-bottom: 0rem;
+  }
+
+  .searchbarDesktop{
+    display:none;
+  }
+
+  .noRecipesText{
+    padding-left: 1em;
+    padding-right: 1em;
+    font-size: 20px;
+  }
+}

@@ -1,0 +1,244 @@
+body {
+  color: #343434;
+}
+
+.currentRecipeLogga{
+  width: 10em;
+  height: auto;
+  position: relative;
+}
+.Linkindex{
+  height:137.66px;
+}
+
+.backButton {
+  position: absolute;
+  top: 2em;
+  right: 2em;
+  width: 3em;
+  height: 3em;
+   z-index: 1; 
+  background: white;
+  border-radius: 40px;
+}
+
+.currentRecipe {
+  max-width: 60em;
+  background: rgba(255, 255, 255, 0.8);
+  padding-top: 1em;
+  padding-bottom: 1em;
+  margin: 0 auto;
+  padding-left: 1em;
+  padding-right: 1em;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  border-radius: 40px;
+}
+
+.currentRecipeImgContainer {
+  position: relative;
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+  border-radius: 40px;
+  height: auto;
+  overflow: hidden;
+  margin-bottom: 1rem;
+
+}
+
+.currentRecipeImg {
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 40px;
+
+}
+
+.currentRecipeTitle {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 0.5em;
+  background: rgba(255, 255, 255, 0.7);
+  color: #343434;
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.currentRecipeInfo {
+  display: flex;
+  font-size: 16px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.infoText{
+  flex: 1;
+  text-align: center;
+  font-size: 14px;
+  line-height: 1;
+  margin-top: 0 0.5em;
+  margin-left: 1em;
+}
+
+.scroll-down{
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  outline: none;
+}
+
+.smallImage{
+  width: 50px;
+  height: 50px;
+  margin-top: 0.5em;
+}
+
+a {
+  display: inline-block;
+}
+
+
+
+.recipe-instructions ol{
+  padding: 0;
+  margin: 0;
+  text-align: left;
+  padding-left: 1em;
+}
+
+.currentRecipeSection {
+  margin-bottom: 1em;
+  columns: 2;
+  column-count: 2;
+  column-gap: 5em;
+}
+
+.currentRecipeSection h2 {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 0.5em;
+}
+
+.currentRecipeSection ul {
+  list-style:circle;
+  padding: 0;
+  margin: 0;
+  text-align: left;
+  padding-left: 1em;
+}
+
+.currentRecipeSection p {
+  text-align: left;
+  padding-left: 0;
+}
+
+.currentRecipeSection li {
+  margin-bottom: 0.3em;
+  padding-left: 0;
+}
+
+.headers {
+  text-align: left;
+  padding-left: 0;
+  margin-bottom: 0.5rem;
+}
+
+.loader {
+  margin: auto;
+  border: 0.5em solid #343434; 
+  border-radius: 50%;
+  width: 6em;
+  height: 6em;
+  animation: spinner 3s linear infinite;
+}
+
+.wineRecsTitle{
+  text-align: center;
+  margin-bottom: 0.8rem;
+  margin-top: 0.5rem;
+}
+
+.wineRecsText{
+  padding-left: 3em;
+  padding-right: 3em;
+}
+
+@media screen and (max-width: 480px) {
+  .currentRecipe {
+    width: auto;
+    border-radius: 0;
+  }
+
+  .currentRecipeTitle {
+    font-size: 1.2rem;
+  }
+  
+  .infoList li {
+    width: 15em;
+    margin-right: 0em;
+    margin-bottom: 1em;
+  }
+
+  .smallImage{
+    width: 50px;
+    height: 50px;
+    margin-top: 0.5em;
+  }
+
+  .backButton{
+    width: 30px;
+    height: 30px;
+  }
+
+  .currentRecipeLogga{
+    /* width: 5em;
+    padding-bottom: 1em; */
+    display: none;
+  }
+
+  .infoText{
+    font-size: 1rem !important;
+    
+  }
+
+  .headers{
+    font-size: 1.2rem !important;
+    font-weight: bold;
+  }
+
+  .recipe-instructions ol{
+    font-size: 1rem;
+  }
+
+  .currentRecipeSection ul{
+    font-size: 1rem;
+  }
+
+  .currentRecipeSection li{
+  margin-bottom: 0;
+    
+  }
+  .currentRecipeImgContainer{
+  box-shadow: rgba(255, 255, 255, 0.2) 0px 0px 0px 1px inset, rgba(0, 0, 0, 0.9) 0px 0px 2px 1px;
+  margin-bottom: 0.8rem;
+
+  }
+
+
+}
+
+/* Phone */
+@media (max-width: 480px){
+
+  .backButton{
+      display: none;
+  }
+
+}

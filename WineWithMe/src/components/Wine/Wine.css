@@ -1,0 +1,129 @@
+.card {
+  width: 14em;
+  background-color: #fff;
+  border: 2px solid rgba(29, 26, 25, 0.1);
+  border-radius: 4px;
+  border-radius: 2em;
+  margin-right: 1rem;
+  padding-bottom: 0rem !important;
+  padding-top: 0.7rem !important;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  transition: transform 0.2s ease-in-out;
+  cursor: pointer;
+}
+
+.main-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  height: 70%;
+  overflow: hidden;
+}
+
+.card img {
+  height: 6em;
+  object-fit: cover;
+}
+
+.text {
+  margin: 0 1rem;
+
+}
+
+.stats {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 1rem;
+  padding-top: 1rem;
+  border-top: 1px solid rgba(45, 41, 38, 0.1);
+  padding: 1rem;
+}
+
+.price {
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+
+.title {
+  font-size: 1rem;
+}
+
+.wineList{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.rating img{
+  height: 0.8em;
+  margin-left: 0.5em;
+}
+.card{
+  padding-bottom: 0.7rem !important;
+}
+
+@media screen and (max-width: 800px) {
+  .card {
+    width: 10em;
+    margin-right: 0.7rem;
+    margin-bottom: 0.7rem;
+  }
+  .card img {
+    height: 7em;
+    object-fit: cover;
+  }
+  .title {
+    font-size: 0.9rem !important;
+  }
+  .price {
+    font-size: 0.8rem !important;
+  } 
+  .rating {
+    font-size: 1rem !important;
+  }
+  .rating img{
+    height: 0.9em;
+    margin-left: 0.3em;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .card {
+    margin-right: 0.7rem;
+    margin-bottom: 0.7rem;
+
+  }
+  .card img {
+    height: 6em;
+    object-fit: cover;
+  }
+  .title {
+    font-size: 0.9rem !important;
+  }
+  .price {
+    font-size: 0.8rem !important;
+  } 
+  .rating {
+    font-size: 0.8rem!important;
+  }
+  .rating img{
+    height: 1em;
+    margin-left: 0.3em;
+  }
+
+  .wineList{
+    flex-direction: initial; 
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-content: center;
+  }
+  .main-content{
+    height: 70%;
+  }
+}
